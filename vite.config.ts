@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/lib/index.tsx"),
       name: "Frontend Utils",
-      fileName: (format) => `@drlanbn/frontend-utils.${format}.ts`,
+      fileName: (format) => `frontend-utils.${format}.ts`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],

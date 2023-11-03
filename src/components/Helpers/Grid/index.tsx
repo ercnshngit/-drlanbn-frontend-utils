@@ -1,3 +1,4 @@
+import React from "react";
 export default function Grid() {
   return (
     <div className="fixed inset-0 grid grid-cols-12 gap-5 opacity-10">

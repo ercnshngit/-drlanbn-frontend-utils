@@ -1,8 +1,9 @@
+import React from "react";
 export default function TailwindBreakpoint() {
   return (
-    <div className="flex items-center m-2 fixed bottom-0 right-0 border border-gray-400 rounded p-2 bg-gray-300 text-pink-600 text-sm">
+    <div className="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
       <svg
-        className="h-6 w-auto inline"
+        className="inline w-auto h-6"
         viewBox="0 0 80 64"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -31,16 +32,16 @@ export default function TailwindBreakpoint() {
       <span className="ml-1 sm:hidden md:hidden lg:hidden xl:hidden">
         default (&lt; 640px)
       </span>
-      <span className="ml-1 hidden sm:inline md:hidden font-extrabold">sm</span>
-      <span className="ml-1 hidden md:inline lg:hidden font-extrabold">md</span>
-      <span className="ml-1 hidden lg:inline xl:hidden font-extrabold">lg</span>
-      <span className="ml-1 hidden xl:inline 2xl:hidden font-extrabold">
+      <span className="hidden ml-1 font-extrabold sm:inline md:hidden">sm</span>
+      <span className="hidden ml-1 font-extrabold md:inline lg:hidden">md</span>
+      <span className="hidden ml-1 font-extrabold lg:inline xl:hidden">lg</span>
+      <span className="hidden ml-1 font-extrabold xl:inline 2xl:hidden">
         xl
       </span>
-      <span className="ml-1 hidden 2xl:inline 4xl:hidden  font-extrabold">
+      <span className="hidden ml-1 font-extrabold 2xl:inline 4xl:hidden">
         2xl
       </span>
-      <span className="ml-1 hidden 4xl:inline font-extrabold">4xl</span>
+      <span className="hidden ml-1 font-extrabold 4xl:inline">4xl</span>
     </div>
   );
 }
